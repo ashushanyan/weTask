@@ -21,7 +21,7 @@
                                 <span class="input-group-text" id="inputGroup-sizing-sm">Board Title</span>
                             </div>
                             <input type="text" name="title" value="{{$board['title']}}" class="form-control">
-                            <button type="submit" class="btn btn-lg btn-info ml-1">edit</button>
+                            <button type="submit" class="btn btn-lg btn-info ml-1">Edit</button>
                         </div>
                     </div>
                 </form>
@@ -33,11 +33,11 @@
                             <div class="card-body">
                                 <div class="input-group input-group-sm mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroup-sizing-sm">email</span>
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
                                     </div>
                                     <input type="hidden" name="board_id" value="{{$board['id']}}">
-                                    <input type="email" name="email" class="form-control">
-                                    <button type="submit" class="btn btn-sm btn-success ml-1">send</button>
+                                    <input type="email" name="email" placeholder="Email" class="form-control">
+                                    <button type="submit" class="btn btn-sm btn-success ml-1">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -50,11 +50,11 @@
                             <div class="card-body">
                                 <div class="input-group input-group-sm mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroup-sizing-sm">title</span>
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Title</span>
                                     </div>
                                     <input type="hidden" name="board_id" value="{{$board['id']}}">
-                                    <input type="text" name="title" class="form-control">
-                                    <button type="submit" class="btn btn-sm btn-success ml-1">create</button>
+                                    <input type="text" name="title" placeholder="Title" class="form-control">
+                                    <button type="submit" class="btn btn-sm btn-success ml-1">Create</button>
                                 </div>
                             </div>
                         </form>

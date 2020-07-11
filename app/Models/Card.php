@@ -22,7 +22,7 @@ class Card extends Model
     ];
 
     public const STATIC_CARDS = [
-        'ToDo',
+        'To Do',
         'In Progress',
         'Done',
     ];

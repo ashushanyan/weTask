@@ -16,10 +16,10 @@
                     <div class="card-body">
                         <div class="input-group input-group-sm mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-sm">title</span>
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Title</span>
                             </div>
-                            <input type="text" name="title" class="form-control">
-                            <button type="submit" class="btn btn-sm btn-success ml-1">create</button>
+                            <input type="text" name="title" placeholder="Title" class="form-control">
+                            <button type="submit" class="btn btn-sm btn-success ml-1">Create</button>
                         </div>
                         @foreach($errors->all() as $error)
                             <p class="alert alert-danger" style="color: red">* {{$error}}</p>

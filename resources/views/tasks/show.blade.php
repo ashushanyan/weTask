@@ -7,7 +7,7 @@
             @if($task->status)
                 <input type="hidden" name="status" value="0">
                 <button type="submit" name="task_id" value="{{$task->id}}"
-                        class=" btn btn float-right btn-warning ml-4 mt-2">send to archive
+                        class=" btn btn float-right btn-warning ml-4 mt-2">Send to archive
                 </button>
             @else
                 <input type="hidden" name="status" value="1">
@@ -38,7 +38,7 @@
                             <div class="card-body" style="overflow: hidden">
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">title</span>
+                                        <span class="input-group-text">Title</span>
                                     </div>
                                     <input type="text" name="title" value="{{$task->title}}" class="form-control"
                                            placeholder="Username"
@@ -46,7 +46,7 @@
                                 </div>
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">card</label>
+                                        <label class="input-group-text" for="inputGroupSelect01">Card</label>
                                     </div>
                                     <select class="custom-select" id="inputGroupSelect01" name="card_id">
                                         @foreach($cards as $card)
@@ -59,14 +59,14 @@
                                 </div>
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">description</span>
+                                        <span class="input-group-text">Description</span>
                                     </div>
                                     <textarea class="form-control" name="description" aria-label="description">{{$task->description}}
                                     </textarea>
                                 </div>
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">assigned to</label>
+                                        <label class="input-group-text" for="inputGroupSelect01">Assigned to</label>
                                     </div>
                                     <select class="custom-select" id="inputGroupSelect01" name="assigned_to">
                                         <option
@@ -82,7 +82,7 @@
                                     </select>
                                 </div>
 
-                                <button type="submit" class="btn btn  float-right btn-info">save</button>
+                                <button type="submit" class="btn btn  float-right btn-info">Save</button>
                             </div>
 
                         </form>

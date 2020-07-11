@@ -21,7 +21,7 @@
                                 <span class="input-group-text" id="inputGroup-sizing-sm">Card Title</span>
                             </div>
                             <input type="text" name="title" value="{{$card['title']}}" class="form-control">
-                            <button type="submit" class="btn btn-lg btn-info ml-1">edit</button>
+                            <button type="submit" class="btn btn-lg btn-info ml-1">Edit</button>
                         </div>
                     </div>
                 </form>
@@ -34,21 +34,21 @@
                                 <input type="hidden" name="card_id" value="{{$card['id']}}">
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1">title</span>
+                                        <span class="input-group-text" id="basic-addon1">Title</span>
                                     </div>
                                     <input type="text" name="title" class="form-control" placeholder="title"
                                            aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">description</span>
+                                        <span class="input-group-text">Description</span>
                                     </div>
                                     <textarea class="form-control" name="description"
-                                              aria-label="description"></textarea>
+                                              aria-label="description" placeholder="description"></textarea>
                                 </div>
                                 <div class="input-group mb-2">
                                     <div class="input-group-prepend">
-                                        <label class="input-group-text" for="inputGroupSelect01">assigned to</label>
+                                        <label class="input-group-text" for="inputGroupSelect01">Assigned to</label>
                                     </div>
                                     <select class="custom-select" id="inputGroupSelect01" name="assigned_to">
                                         <option value="{{$creator['id']}}">{{$creator['name']}}</option>
@@ -57,7 +57,7 @@
                                         @endforeach
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn  float-right btn-success">create</button>
+                                <button type="submit" class="btn btn  float-right btn-success">Create</button>
                             </div>
                         </form>
                     </div>
